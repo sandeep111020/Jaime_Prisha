@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:layout_marginBottom="30dp"
+    android:layout_centerInParent="true">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_login"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/shaowlayout"
+
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="#F1EAEA"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="0dp"
+            card_view:cardUseCompatPadding="false" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/texview"
+                    android:text="Ear Rings"
+                    android:textSize="20dp"
+                    android:textColor="#02075d" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/earrings"
+        android:layout_marginLeft="40dp"
+        card_view:civ_border_color="#FF000000"
+        card_view:civ_border_width="2dp" />
+
+
+</RelativeLayout>
